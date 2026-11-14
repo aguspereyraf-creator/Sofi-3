@@ -17,7 +17,7 @@ const imagenChica = new Image();
 imagenChica.src = "assets/chica.png";
 
 const imagenCaminando = new Image();
-imagenCaminando.src = "assets/chica_caminando.png";
+imagenCaminando.src = "assets/chica_caminando.PNG";
 
 const imagenTikTok = new Image();
 imagenTikTok.src = "assets/tiktok.png";
