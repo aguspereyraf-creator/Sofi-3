@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗 Para sofi 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- fondo y efectos -->
+    <div id="particles"></div>
+
+    <!-- MINIJUEGO INICIAL -->
+    <section id="game-screen" class="screen">
+        <div class="game-card">
+            <div class="game-flower">💗</div>
+
+            <h1>Un regalo hecho con mucho amor</h1>
+
+            <p id="game-description">
+                Toca los 3 corazones para abrir.
+            </p>
+
+            <div class="hearts-game" id="hearts-game">
+                <button class="heart-option">♡</button>
+                <button class="heart-option">♡</button>
+                <button class="heart-option">♡</button>
+            </div>
+
+            <p id="game-progress">Corazones encontrados: 0/3</p>
+
+            <button id="unlock-button" disabled>
+                Desbloquear sorpresa
+            </button>
+        </div>
+    </section>
+
+    <!-- pantalla de la carta -->
+    <section id="envelope-screen" class="screen hidden">
+        <div class="intro">
+            <h1>Carta para Sofia</h1>
+            <p>Una pequeña sorpresa hecha con mucho amor.</p>
+        </div>
+
+        <div class="envelope-container" id="envelope">
+
+            <div class="envelope-back"></div>
+
+            <div class="letter-preview">
+                <span>💌</span>
+            </div>
+
+            <div class="envelope-front"></div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-heart">♡</div>
+
+        </div>
+
+        <p class="click-hint" id="envelope-hint">
+            Tocá el sobre para abrirlo
+        </p>
+    </section>
+
+    <!-- carta principal -->
+    <main id="letter-screen" class="hidden">
+
+        <div class="letter-card">
+
+            <div class="letter-decoration">✿</div>
+
+            <p class="small-title">27/10/2026</p>
+
+            <h1>Nuestro segundo mes juntos ♡</h1>
+
+            <div class="separator">♡ ───── ✿ ───── ♡ ───── ✿ ───── ♡ ───── ✿ ───── ♡ ───── ✿ ───── ♡</div>
+
+            <!-- carta contenido -->
+            <div class="letter-content">
+                <p class="letter-text">
+                    sofia, desde que te conoci mi vida dio una vuelta de 360 grados, el como fuimos hablando poco a poco todos los dias, el como pasabamos horas pegadas al telefono con tal de saber un poquito mas del otro, eso fue lo que sin saber me enamoro lemtanmente de ti, el como nos ibamos gustando cada vez mas y mas de forma romantica dejando de lado que solo nos escribimos para pasar un rato de calentura y hoy sin darnos cuentas ya pasaron 2 meses siendo novios y como 5 meses desde que nos conocimos, la verdad cada dia fue una aventura muy distinta, algunas divertidas, otras cursis, otras algo picantes, incluso algunas un poco tristes, pero todas las pasamos juntos, amandonos profundamente, y aun asi, a pesar de que ya pasaron 5 meses juntos hablando todos los dias sigo aprendiendo muchas cosas de ti, y me doy cuenta lo unica y extraordinaria que eres en los pequeños detalles que solamente tu tienes, te amo por tantas razones que podria llenar un libro entero de tu forma de ser. se que ultimamente estoy muy ocupado como para hacerte datalles durante todo el mes y cositas especiales y unicas hechas por mi, pero te prometo que me voy a esforzar el doble para volver a darte todos los detalles que te mereces. 
+                </p>
+
+                <p class="letter-text">
+                    Te pido perdon por aveces hacerte dudar del cariño que te tengo, pero te prometo que mi amor por ti va existir durante toda mi vida pase lo que pase porque desde que te conoci mi vida ha sido muchisimo mejor, nunca me aburriria de una chica tan divertida, inteligente y carismatica, por mas que mires mucho tiktok JSAJSAJASJ, yo se que siempre estoy en tu cabeza, como tu siempre estas en la mia y la verdad es que tenerte el sentimiento que te tengo es lo mas vulnerable que me he sentido con alguien, es increible la confianza que te tengo y es loco lo cercana que te siento a pesar de estar a tantos kilometros de distancia, yo se que las cosas seran muy dificiles y tendremos que esforzarnos todos los dias, incluso cuando no nos entendamos pero deseo hacerlo porque te amo, te quiero a ti y unicamente a ti, estas pegada en mi mente como mateo al roblox JSAJASJSA, mi corazon late tu nombre en codigo morse, soy solamente tuyo y tan tuyo que quiero pertenecerte al menos 80 años mas, no podre formar esta conexion ni aprecio por una persona en toda mi vida si no eres tu y solo tu, sin importar el tiempo que tarde o el trabajo que me cueste, quiero que nuestra relacion funcione bien y terminemos felices por siempre, formando la familia que siempre soñamos, y que nos amemos hasta el ultimo dia de nuestras vidas, porque te amo con todo mi corazon y alma, y no quiero que eso cambie nunca.
+                </p>
+            </div>
+
+            <!-- regalo sorpresa -->
+            <section class="surprise-section">
+
+                <h2>Y por ultimo</h2>
+
+                <button id="surprise-button">
+                    🎁
+                </button>
+
+                <div id="surprise-content" class="hidden">
+                    <div class="surprise-icon">💐</div>
+                    <p><a href="juego.html" class="boton-juego">Jugar al juego</a></p>
+                </div>
+
+            </section>
+
+            <!-- despedida -->
+            <footer>
+                <p>♡ Hecho con mucho cariño por Agus ♡</p>
+                <span>✿ ❀ ✿</span>
+            </footer>
+
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

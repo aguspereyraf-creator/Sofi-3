@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Amor</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+
+<body>
+
+    <main class="contenedor-juego">
+
+        <h1>JUEGO DEL AMOR</h1>
+
+        <p class="subtitulo-juego">
+            Atrapa los corazones y esquiva las "malvadas distracciones >:3
+        </p>
+
+        <section class="informacion-juego">
+
+            <div>PUNTOS: <span id="puntos">0</span></div>
+
+            <div>VIDAS: <span id="vidas">❤️❤️❤️❤️❤️</span></div>
+
+            <div>NIVEL: <span id="nivel">1</span></div>
+
+        </section>
+
+        <canvas id="juego" width="600" height="600"></canvas>
+
+        <div class="controles-juego">
+            <p>← → o A y D para moverte</p>
+        </div>
+
+        <button id="botonInicio">JUGAR</button>
+
+        <section id="pantallaMensaje" class="pantalla-mensaje">
+
+            <img id="imagenDerrota"
+                 src="assets/derrota.png"
+                 alt="Imagen de derrota">
+
+            <h2 id="tituloMensaje"></h2>
+
+            <p id="textoMensaje"></p>
+
+            <button id="botonMensaje">CONTINUAR</button>
+
+        </section>
+
+    </main>
+
+    <script src="juego.js"></script>
+
+</body>
+</html>
